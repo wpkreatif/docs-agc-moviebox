@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dramasubs Docs</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css" title="docsify-darklight-theme" type="text/css">
+
+  <style>
+    /* 2. Hapus Icon GitHub di pojok kanan atas */
+    .github-corner { display: none !important; }
+    
+    /* Perbaikan Sidebar agar muncul jelas */
+    .sidebar { padding-top: 20px; }
+    
+    /* Tombol Toggle Dark Mode di kanan bawah */
+    #docsify-darklight-theme {
+      right: 20px !important;
+      bottom: 20px !important;
+    }
+    .markdown-section code {
+        color: #42b983 !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">Memuat Dokumentasi...</div>
+
+  <script>
+    window.$docsify = {
+      name: 'Dramasubs Docs',
+      loadSidebar: false,    // Harus TRUE agar menu samping muncul
+      subMaxLevel: 3,
+      auto2top: true,
+      // Fitur Pencarian
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: 'Cari dokumentasi...',
+        noData: 'Tidak ditemukan!',
+        depth: 4
+      },
+      // Pengaturan Warna Dark Mode
+      darklightTheme: {
+        defaultTheme: 'dark',
+        dark: {
+          accent: '#42b983',
+          background: '#0e1117',
+        },
+        light: {
+          accent: '#42b983',
+        }
+      }
+    }
+  </script>
+
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  
+  <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
+  
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+
+</body>
+</html>
